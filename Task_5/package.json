@@ -1,0 +1,19 @@
+{
+  "name": "task_5",
+  "version": "1.0.0",
+  "description": "Adding HTML,CSS,JS(Views)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Prakhar Jaiswal",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
