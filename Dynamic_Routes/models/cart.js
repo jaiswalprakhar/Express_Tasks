@@ -49,7 +49,7 @@ module.exports = class Cart {
                 return;
             }
             const productQty = product.qty;
-            updatedCart.products = updatedCart.products. filter(
+            updatedCart.products = updatedCart.products.filter(
                 prod => prod.id !== id
             );
             updatedCart.totalPrice = updatedCart.totalPrice - (productPrice * productQty);
