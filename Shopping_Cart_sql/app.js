@@ -16,13 +16,13 @@ const shopRoutes = require('./routes/shop');
 
 
 // Testing Code - 
-db.execute('SELECT * FROM products')
+/*db.execute('SELECT * FROM products')
 .then(result => {
     console.log(result);
 })
 .catch(err => {
     console.log(err);
-});
+});*/
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -32,4 +32,6 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log(`Server listening at PORT 3000`);
+});
